@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head> <!-- responsável por receber configurações da página -->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <style>
+            body {
+                background: #e5e5ee;
+                color: #25282B;
+                text-align: center;
+            }
+            button {
+                border: none;
+                font-weight: bold;
+                background: none;
+                color: #ff5E84;
+            }
+            .fat {
+                background: #ff5E84;
+                color: white;
+            }
+            #footer a {
+                color: #25282B;
+                text-decoration: none;
+            }
+            .hide {
+                display: none;
+            }
+        </style>
+        <title>Creative Home</title>
+
+    </head>
+    <body>
+        <img src="logo.png" alt="Creative Home">
+        <p>
+            Ficar em casa em períodos longos, não deve ser nada fácil.
+        </p>
+        <p>
+            Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas
+            </strong> e tudo que for necessário para tornar esse momento mais interessante.
+        </p>
+        <p>
+            Comece clicando em ver ideias para ver as
+            ideias cadastradas e contribua adicionando sua ideia.
+        </p>
+
+        <button><strong>+</strong> Adicionar ideias</button>
+        <button class="fat">Ver ideias</button>
+
+        <p id="footer">Com (L) <a href="https://www.linkedin.com/in/wellington-fidelis-7b02b167/"> Eu mesmo.</a></p>
+        <script>
+            // ouvindo o evento de click do button .fat
+            document
+                .querySelector("button.fat")
+                .addEventListener("click", function() {
+                    document
+                        .querySelector("#footer")
+                        .classList
+                        .toggle("hide")
+
+                })
+        </script>
+    </body>
+</html>
