@@ -1,0 +1,94 @@
+/*
+    all it is boxes
+    */
+
+body {
+  background: #e5e5ee;
+  color: #25282b;
+  margin: 0;
+}
+/*CSS globais*/
+.hide {
+  display: none;
+}
+a {
+    color: #ff5e84;
+    font-weight: bold;
+    text-decoration: none;
+  }
+a:hover {
+    text-decoration: underline;
+}
+/*CSS específicos*/  
+#container {
+  width: 90%;
+  max-width: 980px;
+  margin: 40px auto;
+
+  display: flex;
+}
+
+#intro {
+  width: 300px;
+  margin-right: 20px;
+}
+main {
+  margin: 32px 0;
+}
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 32px;
+}
+button {
+  background: none;
+  color: #ff5e84;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  text-decoration: underline;
+}
+button.fat {
+  background: #ff5e84;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.2);
+}
+button.fat:hover {
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+}
+footer a {
+  color: #25282b;
+  text-decoration: none;
+}
+.ideia {
+    display: flex;
+    margin-bottom: 32px;
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+}
+.ideia img {
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+}
+.ideia h3 {
+    margin: 0;
+}
+.ideia p{
+    margin: 8px 0;
+    color: #777;
+}
+.ideia description {
+    margin: 16px 0;
+}
