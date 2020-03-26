@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ideias - Casa Ideias Criativas</title>
+</head>
+
+<body id="page-ideias">
+
+    <div id="container">
+        <header>
+            <a href="index.html">
+                <img src="logo.png" alt="Creative Home">
+            </a>
+            <nav>
+                <li><a href="index.html">Início</a></li>
+                <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>em exibição</p>
+            <h1>Ideias</h1>
+        </section>
+        <main>
+            <section id="ideias">
+                <div class="ideia">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg"
+                        alt="Imagem de Curso de Programação">
+                    <div class="content">
+                        <h3>Cursos de Programação</h3>
+                        <p>Estudo</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, minima vel quia minus
+                            cumque reprehenderit assumenda temporibus reiciendis harum accusamus placeat, officiis iure,
+                            modi cum magnam consectetur nostrum? Ipsam, maiores.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+                <div class="ideia">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Imagem de Exercises">
+                    <div class="content">
+                        <h3>Exercises</h3>
+                        <p>Health</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, minima vel quia minus
+                            cumque reprehenderit assumenda temporibus reiciendis harum accusamus placeat, officiis iure,
+                            modi cum magnam consectetur nostrum? Ipsam, maiores.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+                <div class="ideia">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Imagem de Meditation">
+                    <div class="content">
+                        <h3>Meditation</h3>
+                        <p>Mentalidade</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, minima vel quia minus
+                            cumque reprehenderit assumenda temporibus reiciendis harum accusamus placeat, officiis iure,
+                            modi cum magnam consectetur nostrum? Ipsam, maiores.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+                <div class="ideia">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729032.svg" alt="Imagem de Karaoke">
+                    <div class="content">
+                        <h3>Karaoke</h3>
+                        <p>Diversão</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, minima vel quia minus
+                            cumque reprehenderit assumenda temporibus reiciendis harum accusamus placeat, officiis iure,
+                            modi cum magnam consectetur nostrum? Ipsam, maiores.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            Com (L) <a href="https://www.linkedin.com/in/wellington-fidelis-7b02b167/" target="_blank"> Eu mesmo.</a>
+        </footer>
+    </div>
+
+    <div class="hide" id="modal">
+        <div class="content">
+            <h1>New Idea</h1>
+            <form action="">
+
+                <div class="input-wrapper">
+                    <label for="title">Título da ideia</label>
+                    <input type="text" name="title" id="title">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category" id="category">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="image">Link da imagem</label>
+                    <input type="url" name="image" id="image">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Digite uma descrição para essa ideia</label>
+                    <textarea type="text" name="description" id="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link">Link da ideia</label>
+                    <input type="url" name="link" id="link">
+                </div>
+
+                <a href="#" onclick="onOff()">Voltar</a>
+                <button>Salvar</button>
+
+
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
