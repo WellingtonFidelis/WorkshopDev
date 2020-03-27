@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    {% block titulo %}
+        <title>Creative Home</title>
+    {% endblock titulo %}
+    <!-- head config -->
+    {% include "head.html" %}
+</head>
+
+<body id="{{ bodyId }}">
+    
+    <div id="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Modal -->
+    {% include "modal.html" %}
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

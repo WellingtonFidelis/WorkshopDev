@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% set bodyId = "page-ideias" %}  
+
+{% block titulo %}
+    <title>Ideias - Casa Criativa</title>
+{% endblock titulo %}
+
+
+{% block content %}
+    <header>
+        <a href="/">
+            <img src="/logo.png" alt="Creative Home">
+        </a>
+        <nav>
+            <li><a href="/">Início</a></li>
+            <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+        </nav>
+    </header>
+    <section id="title">
+        <p>em exibição</p>
+        <h1>Ideias</h1>
+    </section>
+    <main>
+        <section id="ideias">
+            <!-- all ideas -->
+            {% include "all_ideas.html" %}
+        </section>
+    </main>
+    <footer>
+        Com (L) <a href="https://www.linkedin.com/in/wellington-fidelis-7b02b167/" target="_blank"> Eu mesmo.</a>
+    </footer>
+{% endblock %}
